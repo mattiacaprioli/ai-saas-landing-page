@@ -6,13 +6,15 @@ import Image from "next/image";
 import { Button } from "@/components/Button";
 import { Orbit } from "@/components/Orbit";
 import Planet from "@/components/Planet";
+import { SectionBorder } from "@/components/SectionBorder";
+import { SectionContent } from "@/components/SectionContent";
 
 export const Hero = () => {
   return (
     <section>
       <div className="container">
-        <div className="border-l border-r border-[var(--color-border)]">
-          <div className="container py-24 md:py-36 lg:py-48 relative isolate overflow-hidden [mask-image:lineat-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
+        <SectionBorder>
+          <SectionContent className="relative isolate overflow-hidden [mask-image:lineat-gradient(to_bottom,transparent,black_10%,black_90%,transparent)]">
             <div className="absolute -z-10 inset-0 bg-[radial-gradient(circle_farthest-corner,var(--color-fuchsia-900)_50%,var(--color-indigo-900)_75%,transparent)] [mask-image:radial-gradient(circle_farthest-side,black,transparent)]"></div>
             <div className="absolute inset-0 -z-10">
               <div className="absolute-center">
@@ -61,21 +63,46 @@ export const Hero = () => {
             </div>
             <div className="relative isolate max-w-5xl mx-auto">
               <div className="absolute left-1/2 top-0">
-                <Planet size="lg" color="violet" className="-translate-x-[316px] -translate-y-[76px] rotate-135" />
-                <Planet size="lg" color="violet" className="-translate-y-[188px] translate-x-[334px] -rotate-135" />
-                <Planet size="sm" color="fuchsia" className="-translate-y-[372px] -translate-x-[508px] rotate-135" />
-                <Planet size="md" color="teal" className="-translate-y-[342px] translate-x-[488px] -rotate-135" />
+                <Planet
+                  size="lg"
+                  color="violet"
+                  className="-translate-x-[316px] -translate-y-[76px] rotate-135"
+                />
+                <Planet
+                  size="lg"
+                  color="violet"
+                  className="-translate-y-[188px] translate-x-[334px] -rotate-135"
+                />
+                <Planet
+                  size="sm"
+                  color="fuchsia"
+                  className="-translate-y-[372px] -translate-x-[508px] rotate-135"
+                />
+                <Planet
+                  size="md"
+                  color="teal"
+                  className="-translate-y-[342px] translate-x-[488px] -rotate-135"
+                />
               </div>
               <div className="absolute top-[30%] left-0 z-10 -translate-x-10 hidden lg:block">
                 <div className="bg-gray-800/70 backdrop-blur-md border border-gray-700 rounded-xl p-4 w-72">
-                  <div>Can you generate an incredible front dev video tutorial?</div>
-                  <div className="text-right text-gray-400 text-sm font-semibold">1m ago</div>
+                  <div>
+                    Can you generate an incredible front dev video tutorial?
+                  </div>
+                  <div className="text-right text-gray-400 text-sm font-semibold">
+                    1m ago
+                  </div>
                 </div>
               </div>
               <div className="absolute top-[50%] right-0 z-10 translate-x-10  hidden lg:block">
                 <div className="bg-gray-800/70 backdrop-blur-md border border-gray-700 rounded-xl p-4 w-72">
-                  <div><strong>Brainwave:</strong> I create one based on videos from Frontend Tribe!</div>
-                  <div className="text-right text-gray-400 text-sm font-semibold">Just now</div>
+                  <div>
+                    <strong>Brainwave:</strong> I create one based on videos
+                    from Frontend Tribe!
+                  </div>
+                  <div className="text-right text-gray-400 text-sm font-semibold">
+                    Just now
+                  </div>
                 </div>
               </div>
               <div className="mt-20 rounded-2xl border-2 overflow-hidden border-gradient relative">
@@ -90,8 +117,8 @@ export const Hero = () => {
                 </div>
               </div>
             </div>
-          </div>
-        </div>
+          </SectionContent>
+        </SectionBorder>
       </div>
     </section>
   );

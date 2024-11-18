@@ -1,3 +1,4 @@
+"use client";
 import React from "react";
 import {
   faYoutube,
@@ -21,7 +22,7 @@ export const navItems = [
   },
   {
     name: "Login",
-    href: "#login",
+    href: "#",
   },
 ];
 
@@ -55,6 +56,13 @@ export const Footer = () => {
                 href={item.href}
                 key={item.href}
                 className="uppercase text-xs tracking-wider font-bold text-gray-400"
+                onClick={(e) => {
+                  e.preventDefault();
+                  const element = document.querySelector(item.href);
+                  if (element) {
+                    element.scrollIntoView({ behavior: "smooth" });
+                  }
+                }}
               >
                 {item.name}
               </a>

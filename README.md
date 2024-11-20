@@ -2,7 +2,9 @@
 
 ![AI SaaS Landing Page Banner](https://github.com/mattiacaprioli/ai-saas-landing-page/blob/main/src/assets/images/AiSaasLandingPage.png)
 
-This is a starter template for the AI SaaS Landing Page video created by Frontend Tribe.
+This is a starter template for the AI SaaS Landing Page.
+
+[🌐 View the live site here](https://aisaaslandingpage.netlify.app/)
 
 ## Getting Started
 

@@ -13,13 +13,12 @@ import { SectionContent } from "@/components/SectionContent";
 import {
   motion,
   useMotionValue,
-  useMotionValueEvent,
   useScroll,
   useSpring,
   useTransform,
 } from "framer-motion";
 
-const useMousePosition = () => {
+export const useMousePosition = () => {
   const [innerWidth, setInnerWidth] = useState(1);
   const [innerHeight, setInnerHeight] = useState(1);
   const clientX = useMotionValue(0);
@@ -58,15 +57,13 @@ export const Hero = () => {
 
   const transformedY = useTransform(scrollYProgress, [0, 1], [200, -200]);
 
-  const springX = useSpring(xProgress)
-  const springY = useSpring(yProgress)
+  const springX = useSpring(xProgress);
+  const springY = useSpring(yProgress);
 
   const translateLargeX = useTransform(springX, [0, 1], ["-25%", "25%"]);
   const translateLargeY = useTransform(springY, [0, 1], ["-25%", "25%"]);
-
   const translateMediumX = useTransform(springX, [0, 1], ["-50%", "50%"]);
   const translateMediumY = useTransform(springY, [0, 1], ["-50%", "50%"]);
-
   const translateSmallX = useTransform(springX, [0, 1], ["-100%", "100%"]);
   const translateSmallY = useTransform(springY, [0, 1], ["-100%", "100%"]);
 

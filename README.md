@@ -1,5 +1,7 @@
 # AI SaaS Landing Page Website Template by Frontend Tribe
 
+![AI SaaS Landing Page Banner]((https://github.com/mattiacaprioli/ai-saas-landing-page/blob/main/src/assets/images/AiSaasLandingPage.png))
+
 This is a starter template for the AI SaaS Landing Page video created by Frontend Tribe.
 
 ## Getting Started
